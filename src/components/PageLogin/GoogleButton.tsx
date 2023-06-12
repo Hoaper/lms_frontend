@@ -16,7 +16,9 @@ const GoogleButton = ({children, ...props}: ButtonProps) => {
                     }
                 })
                 .then((res) => {
-                    console.log(res.data);
+                    const {email, name, picture, id} = res.data;
+                    console.log(email, name, picture, id)
+                //     тут делаем запрос на api
                 })
         }
     })
